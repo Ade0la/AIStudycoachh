@@ -109,8 +109,6 @@ Output ONLY the extracted text, nothing else — no commentary, no "Here is the 
 }
 
 // Increase body size limit for file uploads (default is 4MB in Next.js)
-export const config = {
-  api: {
-    bodyParser: false,
-  },
+export const dynamic = 'force-dynamic';
+export const maxDuration = 60;
 }
